@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAYIT</title>
+    <link rel="stylesheet" href="stil.css">
+</head>
+<body>
+    <h2>Kayıt başarılı!</h2>
+    <P>Kaydınız başarıyla tamamlandı. Bilgileriniz sisteme kaydedildi.</P>
+
+    <script> 
+        var veriler=new URLSearchParams(window.location.search);
+        var ad=veriler.get('isim');
+        var soyad=veriler.get('soyad');
+        var cinsiyet=veriler.get('cinsiyet');
+        var doğum_tarihi=veriler.get('doğum_tarihi');
+        var email=veriler.get('email');
+        var telefon_numarası=veriler.get('telefon')
+
+        document.write("<p>Kaydınız onaylanmıştır, tebrikler...</p>");
+        document.write("<p>Adınız:"+ad+"</p>");
+        document.write("<p>Soyadınız:"+soyad+"</p>");
+        document.write("<p>Cinsiyetiniz:"+cinsiyet+"</p>");
+        document.write("<p>Doğum tarihiniz:"+doğum_tarihi+"</p>");
+        document.write("<p>Email adresiniz:"+email+"</p>");
+        document.write("<p>Telefon numaranız:"+telefon_numarası+"</p>");
+    </script>
+            
+
+
+</body>
+</html>
