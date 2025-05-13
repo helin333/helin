@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAYIT</title>
+    <link rel="stylesheet" href="stil.css">
+</head>
+<body>
+
+    <header>
+        <ul class="menu">
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="meslekler.html">Mezunların Çalışabileceği Alanlar</a></li>
+            <li><a href="teknolojiler.html">Kullanılan Teknolojiler</a></li>
+            <li><a href="kayıt_form.html">Topluluğumuz</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+     </header>
+
+    <h3>Kayıt başarılı!</h3>
+    <h4>Bilgileriniz sisteme kaydedildi.</h4>
+    
+
+    <script> 
+        var veriler=new URLSearchParams(window.location.search);
+        var ad=veriler.get('isim');
+        var soyad=veriler.get('soyad');
+        var cinsiyet=veriler.get('cinsiyet');
+        var doğum_tarihi=veriler.get('doğum_tarihi');
+        var email=veriler.get('email');
+        var telefon_numarası=veriler.get('telefon')
+
+        document.write("<p>Adınız:"+ad+"</p>");
+        document.write("<p>Soyadınız:"+soyad+"</p>");
+        document.write("<p>Cinsiyetiniz:"+cinsiyet+"</p>");
+        document.write("<p>Doğum tarihiniz:"+doğum_tarihi+"</p>");
+        document.write("<p>Email adresiniz:"+email+"</p>");
+        document.write("<p>Telefon numaranız:"+telefon_numarası+"</p>");
+    </script>
+            
+
+
+</body>
+</html>
